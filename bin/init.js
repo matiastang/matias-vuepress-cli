@@ -248,7 +248,6 @@ const initDocsAndfile = (answers) => {
 const docsInitAction = () => {
 
     inquirer.prompt(vuepressPromptList).then((answers) => {
-        console.log('answers：', answers)
         initDocsAndfile(answers)
     })
 };
