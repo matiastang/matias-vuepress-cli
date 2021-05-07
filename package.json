@@ -34,5 +34,6 @@
     "gulp-load-plugins": "^2.0.6",
     "inquirer": "^8.0.0",
     "shelljs": "^0.8.4"
-  }
+  },
+  "dependencies": {}
 }
