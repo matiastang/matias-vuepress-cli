@@ -1,6 +1,6 @@
 {
   "name": "matias-vuepress-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vuepress目录及文件创建命令行工具",
   "main": "index.js",
   "bin": {
@@ -25,7 +25,8 @@
     "url": "https://github.com/matiastang/matias-vuepress-cli/issues"
   },
   "homepage": "https://github.com/matiastang/matias-vuepress-cli#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "commander": "^7.2.0",
     "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
@@ -34,6 +35,5 @@
     "gulp-load-plugins": "^2.0.6",
     "inquirer": "^8.0.0",
     "shelljs": "^0.8.4"
-  },
-  "dependencies": {}
+  }
 }
