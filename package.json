@@ -1,0 +1,28 @@
+{
+  "name": "matias-vuepress-cli",
+  "version": "1.0.0",
+  "description": "vuepress目录及文件创建命令行工具",
+  "main": "index.js",
+  "bin": {
+    "mt-vuepress-run": "./bin/init.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiastang/matias-vuepress-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiastang/matias-vuepress-cli/issues"
+  },
+  "homepage": "https://github.com/matiastang/matias-vuepress-cli#readme",
+  "devDependencies": {
+    "commander": "^7.2.0",
+    "inquirer": "^8.0.0",
+    "shelljs": "^0.8.4"
+  },
+  "dependencies": {}
+}
