@@ -1,12 +1,18 @@
 {
   "name": "matias-vuepress-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vuepress目录及文件创建命令行工具",
   "main": "index.js",
   "bin": {
     "mt-vuepress-run": "./bin/init.js"
   },
   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "publish-prerelease": "gulp versionPrerelease && gulp gitVersionPush",
+    "publish-patch": "gulp versionPatch && gulp gitVersionPush",
+    "publish-minor": "gulp versionMinor && gulp gitVersionPush",
+    "publish-major": "gulp versionMajor && gulp gitVersionPush",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +30,7 @@
     "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-bump": "^3.2.0",
+    "gulp-json-editor": "^2.5.5",
     "gulp-load-plugins": "^2.0.6",
     "inquirer": "^8.0.0",
     "shelljs": "^0.8.4"

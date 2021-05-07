@@ -258,5 +258,27 @@ program
     .description('创建docs文件夹')
     .action(docsInitAction)
 
+/**
+ * scripts指令事件
+ */
+const scriptsAction = () => {
+    // 执行指令
+    shell.exec('gulp vuepressAddScripts', (error, stdout, stderr) => {
+        if (error) {
+            console.error(`scripts 指令 exec error: ${error}`)
+            return
+        }
+        console.log(`${stdout}`)
+        console.log(`${stderr}`)
+    });
+};
+
+// 添加scripts指令
+program
+.command('scripts')
+.description('package.json中添加verpress的编译运行指令')
+.action(scriptsAction)
+    
+
 // program.parse 是将命令参数传入commander 管道中，一般放在最后执行。
 program.parse(process.argv)
