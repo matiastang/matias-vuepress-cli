@@ -10,3 +10,5 @@ node_modules
 # 测试生成的目录
 
 docs
+
+.DS_Store
